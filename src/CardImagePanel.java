@@ -41,7 +41,7 @@ public class CardImagePanel extends JPanel {
 
             g.drawImage(image, 0, 0, 73, 98, null);
 
-           // g.dispose();
+            g.dispose();
         }
     }
 
@@ -49,7 +49,7 @@ public class CardImagePanel extends JPanel {
         if (image == null) {
             return new Dimension(20, 52);
         } else {
-            return new Dimension(image.getWidth()/6  , image.getHeight()/6);
+            return new Dimension(image.getWidth()/4  , image.getHeight()/4);
         }
     }
 

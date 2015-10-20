@@ -19,9 +19,9 @@ public class CardChooserControl extends JPanel {
     JLabel of;
     JComboBox suit;
     CardImagePanel imagePanel;
+    CardImagePanel controlPanel;
     JButton jButton;
-    BufferedImage loadImage;
-    BufferedImage buffy;
+
     String dirPath;
     String imageName;
     SuitAndFace suitAndFace;
@@ -165,7 +165,11 @@ public class CardChooserControl extends JPanel {
         face = new JComboBox();
         suit = new JComboBox();
         of = new JLabel("of");
+
         imagePanel = new CardImagePanel();
+
+        controlPanel = new CardImagePanel();
+
 
         ace_clubs = new CardImagePanel();
         ace_hearts = new CardImagePanel();
@@ -298,11 +302,10 @@ public class CardChooserControl extends JPanel {
         king_of_spades_image = new BufferedImage(10, 10, BufferedImage.TYPE_INT_ARGB);
 
 
-        jButton = new JButton("Get Card");
-        this.add(face);
-        //this.add(imagePanel);
 
-        this.add(of);
+
+
+        ///this.add(of);
 
 
         DefaultComboBoxModel suitModel = new DefaultComboBoxModel();
@@ -331,8 +334,14 @@ public class CardChooserControl extends JPanel {
 
         face.setModel(faceModel);
 
-        this.add(suit);
+
+        jButton = new JButton("Get Card");
         this.add(jButton);
+        this.add(face);
+        this.add(of);
+        this.add(suit);
+
+
 
 
     }
@@ -1153,221 +1162,217 @@ public class CardChooserControl extends JPanel {
                             String selection = faceValue + " of " + suitValue;
 
 
-                            String image = faceValue + "_of_" + suitValue + ".png";
+
 
                             if (selection.toString().equals(suitFacepanel.getKey().toString())) {
 
                                 for (int n = 0; n < CardImage.size(); n++) {
                                     if (suitFacepanel.getValue().equals(ace_clubs)) {
                                         imagePanel.setImage(ace_of_clubs_image);
-                                        add(imagePanel);
-
 
 
                                     } else if (suitFacepanel.getValue().equals(ace_diamonds)) {
                                         imagePanel.setImage(ace_of_diamonds_image);
-                                        add(imagePanel);
-
 
 
                                     } else if (suitFacepanel.getValue().equals(ace_hearts)) {
                                         imagePanel.setImage(ace_of_hearts_image);
-                                        add(imagePanel);
+
 
 
 
                                     } else if (suitFacepanel.getValue().equals(ace_spades)) {
                                         imagePanel.setImage(ace_of_spades_image);
-                                        add(imagePanel);
+
 
 
 
                                     } else if (suitFacepanel.getValue().equals(king_of_clubs)) {
                                         imagePanel.setImage(king_of_clubs_image);
-                                        add(imagePanel);
+
 
 
                                     } else if (suitFacepanel.getValue().equals(king_of_diamonds)) {
                                         imagePanel.setImage(king_of_diamonds_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(king_of_hearts)) {
                                         imagePanel.setImage(king_of_hearts_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(king_of_spades)) {
                                         imagePanel.setImage(king_of_spades_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(queen_of_clubs)) {
                                         imagePanel.setImage(queen_of_clubs_image);
-                                        add(imagePanel);
+                                        
 
                                     } else if (suitFacepanel.getValue().equals(queen_of_diamonds)) {
                                         imagePanel.setImage(queen_of_diamonds_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(queen_of_hearts)) {
                                         imagePanel.setImage(queen_of_hearts_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(queen_of_spades)) {
                                         imagePanel.setImage(queen_of_spades_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(jack_of_clubs)) {
                                         imagePanel.setImage(jack_of_clubs_image);
-                                        add(imagePanel);
+                                        
 
 
                                     } else if (suitFacepanel.getValue().equals(jack_of_diamonds)) {
                                         imagePanel.setImage(jack_of_diamonds_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(jack_of_hearts)) {
                                         imagePanel.setImage(jack_of_hearts_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(jack_of_spades)) {
                                         imagePanel.setImage(jack_of_spades_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(ten_of_clubs)) {
                                         imagePanel.setImage(ten_of_clubs_image);
-                                        add(imagePanel);
+                                        
 
 
                                     } else if (suitFacepanel.getValue().equals(ten_of_diamonds)) {
                                         imagePanel.setImage(ten_of_diamonds_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(ten_of_hearts)) {
                                         imagePanel.setImage(ten_of_hearts_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(ten_of_spades)) {
                                         imagePanel.setImage(ten_of_spades_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(nine_of_clubs)) {
                                         imagePanel.setImage(nine_of_clubs_image);
-                                        add(imagePanel);
+                                        
 
 
                                     } else if (suitFacepanel.getValue().equals(nine_of_diamonds)) {
                                         imagePanel.setImage(nine_of_diamonds_image);
-                                        add(imagePanel);
+                                        
 
 
                                     } else if (suitFacepanel.getValue().equals(nine_of_hearts)) {
                                         imagePanel.setImage(nine_of_hearts_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(nine_of_spades)) {
                                         imagePanel.setImage(nine_of_spades_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(eight_of_clubs)) {
                                         imagePanel.setImage(eight_of_clubs_image);
-                                        add(imagePanel);
+                                        
 
 
                                     } else if (suitFacepanel.getValue().equals(eight_of_diamonds)) {
                                         imagePanel.setImage(eight_of_diamonds_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(eight_of_hearts)) {
                                         imagePanel.setImage(eight_of_hearts_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(eight_of_spades)) {
                                         imagePanel.setImage(eight_of_spades_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(seven_of_clubs)) {
                                         imagePanel.setImage(seven_of_clubs_image);
-                                        add(imagePanel);
+                                        
 
 
                                     } else if (suitFacepanel.getValue().equals(seven_of_diamonds)) {
                                         imagePanel.setImage(seven_of_diamonds_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(seven_of_hearts)) {
                                         imagePanel.setImage(seven_of_hearts_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(seven_of_spades)) {
                                         imagePanel.setImage(seven_of_spades_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(six_of_clubs)) {
                                         imagePanel.setImage(six_of_clubs_image);
-                                        add(imagePanel);
+                                        
 
 
                                     } else if (suitFacepanel.getValue().equals(six_of_diamonds)) {
                                         imagePanel.setImage(six_of_diamonds_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(six_of_hearts)) {
                                         imagePanel.setImage(six_of_hearts_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(six_of_spades)) {
                                         imagePanel.setImage(six_of_spades_image);
-                                        add(imagePanel);
+                                        
 
 
 
@@ -1375,104 +1380,100 @@ public class CardChooserControl extends JPanel {
                                     else if (suitFacepanel.getValue().equals(five_of_clubs)) {
 
                                         imagePanel.setImage(five_of_clubs_image);
-                                        add(imagePanel);
+                                        
 
 
                                     } else if (suitFacepanel.getValue().equals(five_of_diamonds)) {
                                         imagePanel.setImage(five_of_diamonds_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(five_of_hearts)) {
                                         imagePanel.setImage(five_of_hearts_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(five_of_spades)) {
                                         imagePanel.setImage(five_of_spades_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(four_of_clubs)) {
                                         imagePanel.setImage(four_of_clubs_image);
-                                        add(imagePanel);
+                                        
 
 
                                     } else if (suitFacepanel.getValue().equals(four_of_diamonds)) {
                                         imagePanel.setImage(four_of_diamonds_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(four_of_hearts)) {
                                         imagePanel.setImage(four_of_hearts_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(four_of_spades)) {
                                         imagePanel.setImage(four_of_spades_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(three_of_clubs)) {
                                         imagePanel.setImage(three_of_clubs_image);
-                                        add(imagePanel);
+                                        
 
 
                                     } else if (suitFacepanel.getValue().equals(three_of_diamonds)) {
                                         imagePanel.setImage(three_of_diamonds_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(three_of_hearts)) {
                                         imagePanel.setImage(three_of_hearts_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(three_of_spades)) {
                                         imagePanel.setImage(three_of_spades_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(two_of_clubs)) {
                                         imagePanel.setImage(two_of_clubs_image);
-                                        add(imagePanel);
+                                        
 
 
                                     } else if (suitFacepanel.getValue().equals(two_of_diamonds)) {
                                         imagePanel.setImage(two_of_diamonds_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(two_of_hearts)) {
                                         imagePanel.setImage(two_of_hearts_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     } else if (suitFacepanel.getValue().equals(two_of_spades)) {
                                         imagePanel.setImage(two_of_spades_image);
-                                        add(imagePanel);
+                                        
 
 
 
                                     }
-
-                                    revalidate();
-                                    repaint();
-
 
 
                                 }

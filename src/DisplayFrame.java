@@ -11,8 +11,12 @@ public class DisplayFrame extends JFrame{
 
     public DisplayFrame() throws IOException {
         super("Cards");
-        setLayout(new FlowLayout());
+
+
+
         deckOfCards = new DisplayPanel();
+
+
         add(deckOfCards);
 
         setSize(900,900);
