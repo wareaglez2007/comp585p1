@@ -21,13 +21,14 @@ public class SuitAndFace {
 
 
         }
-       static {
+ /*      static {
            for (Suit suit : Suit.values())
                for (Face face : Face.values())
                    deck.add(new SuitAndFace(suit, face));
 
 
-       }
+       }*/
+
 
 
     public Suit getSuit(){
@@ -37,13 +38,15 @@ public class SuitAndFace {
         return face;
     }
 
-   public String toString() {
+/*   public String toString() {
        return getFace() + " of " + getSuit();
 
-   }
+   }*/
+/*
   public static ArrayList<SuitAndFace> newDeck(){
         return new ArrayList<SuitAndFace>(deck);
     }
+*/
 
 
 

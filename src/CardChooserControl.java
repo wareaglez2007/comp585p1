@@ -1,3 +1,4 @@
+/*
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -11,9 +12,11 @@ import java.util.List;
 
 import static java.lang.System.*;
 
+*/
 /**
  * Created by rostom on 10/15/2015.
- */
+ *//*
+
 public class CardChooserControl extends JPanel {
     JComboBox face;
     JLabel of;
@@ -351,250 +354,348 @@ public class CardChooserControl extends JPanel {
     }
 
     public void loadCardImage() throws IOException {
-        /*Create a File object to represent the directory containing card images */
+        */
+/*Create a File object to represent the directory containing card images *//*
+
         dirPath = "C:\\Users\\rostom\\Downloads\\PNG-cards-1.3\\PNG-cards-1.3\\";
         folder = new File(dirPath);
         list_of_image_names = folder.listFiles();
 
 
-              /*Loop through */
+              */
+/*Loop through *//*
+
         for(int i = 0; i<list_of_image_names.length;i++){
 
             name_of_images_in_dir =list_of_image_names[i].getName();
             System.out.println(list_of_image_names[i].getName());
 
 
-            /*Ace of Clubs*/
+            */
+/*Ace of Clubs*//*
+
             if(name_of_images_in_dir.toString().equals("ace_of_clubs.png")) {
                 ace_of_clubs_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-       /*         ace_clubs.setImage(ace_of_clubs_image);
+       */
+/*         ace_clubs.setImage(ace_of_clubs_image);
                 ace_clubs.revalidate();
                 ace_clubs.repaint();
 
-                System.out.println(ace_of_hearts_image);*/
+                System.out.println(ace_of_hearts_image);*//*
+
 
             }
-            /*Ace of Diamonds*/
+            */
+/*Ace of Diamonds*//*
+
             else if(name_of_images_in_dir.toString().equals("ace_of_diamonds.png")){
                 ace_of_diamonds_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-              /*  ace_diamonds.setImage(ace_of_diamonds_image);
+              */
+/*  ace_diamonds.setImage(ace_of_diamonds_image);
                ace_diamonds.revalidate();
                ace_diamonds.repaint();
-                System.out.println(ace_of_diamonds_image);*/
+                System.out.println(ace_of_diamonds_image);*//*
+
 
 
             }
-            /*Ace of Hearts*/
+            */
+/*Ace of Hearts*//*
+
             else if(name_of_images_in_dir.toString().equals("ace_of_hearts.png")){
                 ace_of_hearts_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-               /* ace_hearts.setImage(ace_of_hearts_image);
+               */
+/* ace_hearts.setImage(ace_of_hearts_image);
                 ace_hearts.revalidate();
                 ace_hearts.repaint();
-                System.out.println(ace_of_hearts_image);*/
+                System.out.println(ace_of_hearts_image);*//*
+
 
 
             }
-            /*Ace of Spades*/
+            */
+/*Ace of Spades*//*
+
             else if(name_of_images_in_dir.toString().equals("ace_of_spades.png")){
                 ace_of_spades_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-            /*   ace_spades.setImage(ace_of_spades_image);
+            */
+/*   ace_spades.setImage(ace_of_spades_image);
                 ace_spades.revalidate();
                 ace_spades.repaint();
-                System.out.println(ace_of_spades_image);*/
+                System.out.println(ace_of_spades_image);*//*
+
 
 
             }
-            /*two of Clubs*/
+            */
+/*two of Clubs*//*
+
             else if(name_of_images_in_dir.toString().equals("2_of_clubs.png")){
                 two_of_clubs_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-             /*   two_of_clubs.setImage(two_of_clubs_image);
+             */
+/*   two_of_clubs.setImage(two_of_clubs_image);
                 two_of_clubs.revalidate();
                 two_of_clubs.repaint();
-                System.out.println(two_of_clubs_image);*/
+                System.out.println(two_of_clubs_image);*//*
+
 
 
             }
-            /*two of Diamonds*/
+            */
+/*two of Diamonds*//*
+
             else if(name_of_images_in_dir.toString().equals("2_of_diamonds.png")){
                 two_of_diamonds_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-         /*       two_of_diamonds.setImage(two_of_diamonds_image);
+         */
+/*       two_of_diamonds.setImage(two_of_diamonds_image);
                 two_of_diamonds.revalidate();
                 two_of_diamonds.repaint();
-                System.out.println(two_of_diamonds_image);*/
+                System.out.println(two_of_diamonds_image);*//*
+
 
 
             }
-            /*two of Hearts*/
+            */
+/*two of Hearts*//*
+
             else if(name_of_images_in_dir.toString().equals("2_of_hearts.png")){
                 two_of_hearts_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-            /*    two_of_hearts.setImage(two_of_hearts_image);
+            */
+/*    two_of_hearts.setImage(two_of_hearts_image);
                 two_of_hearts.revalidate();
                 two_of_hearts.repaint();
-                System.out.println(two_of_hearts_image);*/
+                System.out.println(two_of_hearts_image);*//*
+
 
 
             }
-            /*two of Spades*/
+            */
+/*two of Spades*//*
+
             else if(name_of_images_in_dir.toString().equals("2_of_spades.png")){
                 two_of_spades_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-               /* two_of_spades.setImage(two_of_spades_image);
+               */
+/* two_of_spades.setImage(two_of_spades_image);
                 two_of_spades.revalidate();
                 two_of_spades.repaint();
-                System.out.println(two_of_spades_image);*/
+                System.out.println(two_of_spades_image);*//*
+
 
 
             }
-            /*three of clubs*/
+            */
+/*three of clubs*//*
+
             else if(name_of_images_in_dir.toString().equals("3_of_clubs.png")){
                 three_of_clubs_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-            /*    three_of_clubs.setImage(three_of_clubs_image);
+            */
+/*    three_of_clubs.setImage(three_of_clubs_image);
                 three_of_clubs.revalidate();
                 three_of_clubs.repaint();
-                System.out.println(three_of_clubs_image);*/
+                System.out.println(three_of_clubs_image);*//*
+
 
 
             }
-            /*Three of diamonds*/
+            */
+/*Three of diamonds*//*
+
             else if(name_of_images_in_dir.toString().equals("3_of_diamonds.png")){
                 three_of_diamonds_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-        /*        three_of_diamonds.setImage(three_of_diamonds_image);
+        */
+/*        three_of_diamonds.setImage(three_of_diamonds_image);
                 three_of_diamonds.revalidate();
                 three_of_diamonds.repaint();
-                System.out.println(three_of_diamonds_image);*/
+                System.out.println(three_of_diamonds_image);*//*
+
 
 
             }
-            /*Three of hearts*/
+            */
+/*Three of hearts*//*
+
             else if(name_of_images_in_dir.toString().equals("3_of_hearts.png")){
                 three_of_hearts_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-           /*     three_of_hearts.setImage(two_of_hearts_image);
+           */
+/*     three_of_hearts.setImage(two_of_hearts_image);
                 three_of_hearts.revalidate();
                 three_of_hearts.repaint();
-                System.out.println(three_of_hearts_image);*/
+                System.out.println(three_of_hearts_image);*//*
+
 
 
             }
-            /*Three of Spades*/
+            */
+/*Three of Spades*//*
+
             else if(name_of_images_in_dir.toString().equals("3_of_spades.png")) {
                 three_of_spades_image = ImageIO.read(new File(dirPath + "\\" + name_of_images_in_dir));
-        /*        three_of_spades.setImage(three_of_spades_image);
+        */
+/*        three_of_spades.setImage(three_of_spades_image);
                 three_of_spades.revalidate();
                 three_of_spades.repaint();
-                System.out.println(three_of_spades_image);*/
+                System.out.println(three_of_spades_image);*//*
+
 
 
             }
-            /*four of clubs*/
+            */
+/*four of clubs*//*
+
             else if(name_of_images_in_dir.toString().equals("4_of_clubs.png")){
                 four_of_clubs_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-              /*  four_of_clubs.setImage(four_of_clubs_image);
+              */
+/*  four_of_clubs.setImage(four_of_clubs_image);
                 four_of_clubs.revalidate();
                 four_of_clubs.repaint();
-                System.out.println(four_of_clubs_image);*/
+                System.out.println(four_of_clubs_image);*//*
+
 
 
             }
-            /*four of diamonds*/
+            */
+/*four of diamonds*//*
+
             else if(name_of_images_in_dir.toString().equals("4_of_diamonds.png")){
                 four_of_diamonds_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-             /*   four_of_diamonds.setImage(four_of_diamonds_image);
+             */
+/*   four_of_diamonds.setImage(four_of_diamonds_image);
                 four_of_diamonds.revalidate();
                 four_of_diamonds.repaint();
-                System.out.println(four_of_diamonds_image);*/
+                System.out.println(four_of_diamonds_image);*//*
+
 
 
             }
-            /*four of hearts*/
+            */
+/*four of hearts*//*
+
             else if(name_of_images_in_dir.toString().equals("4_of_hearts.png")){
                 four_of_hearts_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-              /*  four_of_hearts.setImage(four_of_hearts_image);
+              */
+/*  four_of_hearts.setImage(four_of_hearts_image);
                 four_of_hearts.revalidate();
                 four_of_hearts.repaint();
-                System.out.println(four_of_hearts_image);*/
+                System.out.println(four_of_hearts_image);*//*
+
 
 
             }
-            /*four of Spades*/
+            */
+/*four of Spades*//*
+
             else if(name_of_images_in_dir.toString().equals("4_of_spades.png")){
                 four_of_spades_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-          /*      four_of_spades.setImage(four_of_spades_image);
+          */
+/*      four_of_spades.setImage(four_of_spades_image);
                 four_of_spades.revalidate();
                 four_of_spades.repaint();
-                System.out.println(four_of_spades_image);*/
+                System.out.println(four_of_spades_image);*//*
+
 
 
             }
-            /*five of clubs*/
+            */
+/*five of clubs*//*
+
             else if(name_of_images_in_dir.toString().equals("5_of_clubs.png")){
                 five_of_clubs_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-   /*             five_of_clubs.setImage(five_of_clubs_image);
+   */
+/*             five_of_clubs.setImage(five_of_clubs_image);
                 five_of_clubs.revalidate();
                 five_of_clubs.repaint();
-                System.out.println(five_of_clubs_image);*/
+                System.out.println(five_of_clubs_image);*//*
+
 
 
             }
-            /*five of diamonds*/
+            */
+/*five of diamonds*//*
+
             else if(name_of_images_in_dir.toString().equals("5_of_diamonds.png")){
                 five_of_diamonds_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-            /*    five_of_diamonds.setImage(five_of_diamonds_image);
+            */
+/*    five_of_diamonds.setImage(five_of_diamonds_image);
                 five_of_diamonds.revalidate();
                 five_of_diamonds.repaint();
-                System.out.println(five_of_diamonds_image);*/
+                System.out.println(five_of_diamonds_image);*//*
+
 
 
             }
-            /*five of hearts*/
+            */
+/*five of hearts*//*
+
             else if(name_of_images_in_dir.toString().equals("5_of_hearts.png")){
                 five_of_hearts_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-            /*    five_of_hearts.setImage(five_of_hearts_image);
+            */
+/*    five_of_hearts.setImage(five_of_hearts_image);
                 five_of_hearts.revalidate();
                 five_of_hearts.repaint();
-                System.out.println(five_of_hearts_image);*/
+                System.out.println(five_of_hearts_image);*//*
+
 
 
             }
-            /*five of Spades*/
+            */
+/*five of Spades*//*
+
             else if(name_of_images_in_dir.toString().equals("5_of_spades.png")){
                 five_of_spades_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-               /* five_of_spades.setImage(five_of_spades_image);
+               */
+/* five_of_spades.setImage(five_of_spades_image);
                 five_of_spades.revalidate();
                 five_of_spades.repaint();
-                System.out.println(five_of_spades_image);*/
+                System.out.println(five_of_spades_image);*//*
+
 
 
             }
-            /*six of clubs*/
+            */
+/*six of clubs*//*
+
             else if(name_of_images_in_dir.toString().equals("6_of_clubs.png")){
                 six_of_clubs_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-             /*   six_of_clubs.setImage(six_of_clubs_image);
+             */
+/*   six_of_clubs.setImage(six_of_clubs_image);
                 six_of_clubs.revalidate();
                 six_of_clubs.repaint();
-                System.out.println(six_of_clubs_image);*/
+                System.out.println(six_of_clubs_image);*//*
+
 
 
             }
-            /*six of diamonds*/
+            */
+/*six of diamonds*//*
+
             else if(name_of_images_in_dir.toString().equals("6_of_diamonds.png")){
                 six_of_diamonds_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-          /*      six_of_diamonds.setImage(six_of_diamonds_image);
+          */
+/*      six_of_diamonds.setImage(six_of_diamonds_image);
                 six_of_diamonds.revalidate();
                 six_of_diamonds.repaint();
-                System.out.println(six_of_diamonds_image);*/
+                System.out.println(six_of_diamonds_image);*//*
+
 
 
             }
-            /*six of hearts*/
+            */
+/*six of hearts*//*
+
             else if(name_of_images_in_dir.toString().equals("6_of_hearts.png")){
                 six_of_hearts_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-          /*      six_of_hearts.setImage(six_of_hearts_image);
+          */
+/*      six_of_hearts.setImage(six_of_hearts_image);
                 six_of_hearts.revalidate();
                 six_of_hearts.repaint();
-                System.out.println(six_of_hearts_image);*/
+                System.out.println(six_of_hearts_image);*//*
+
 
 
             }
-            /*six of Spades*/
+            */
+/*six of Spades*//*
+
             else if(name_of_images_in_dir.toString().equals("6_of_spades.png")){
                 six_of_spades_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
                 six_of_spades.setImage(six_of_spades_image);
@@ -604,283 +705,395 @@ public class CardChooserControl extends JPanel {
 
 
             }
-            /*seven of clubs*/
+            */
+/*seven of clubs*//*
+
             else if(name_of_images_in_dir.toString().equals("7_of_clubs.png")){
                 seven_of_clubs_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-              /*  seven_of_clubs.setImage(seven_of_clubs_image);
+              */
+/*  seven_of_clubs.setImage(seven_of_clubs_image);
                 seven_of_clubs.revalidate();
                 seven_of_clubs.repaint();
-                System.out.println(seven_of_clubs_image);*/
+                System.out.println(seven_of_clubs_image);*//*
+
 
 
             }
-            /*seven of diamonds*/
+            */
+/*seven of diamonds*//*
+
             else if(name_of_images_in_dir.toString().equals("7_of_diamonds.png")){
                 seven_of_diamonds_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-               /* seven_of_diamonds.setImage(seven_of_diamonds_image);
+               */
+/* seven_of_diamonds.setImage(seven_of_diamonds_image);
                 seven_of_diamonds.revalidate();
                 seven_of_diamonds.repaint();
-                System.out.println(seven_of_diamonds_image);*/
+                System.out.println(seven_of_diamonds_image);*//*
+
 
 
             }
-            /*seven of hearts*/
+            */
+/*seven of hearts*//*
+
             else if(name_of_images_in_dir.toString().equals("7_of_hearts.png")){
                 seven_of_hearts_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-             /*   seven_of_hearts.setImage(seven_of_hearts_image);
+             */
+/*   seven_of_hearts.setImage(seven_of_hearts_image);
                 seven_of_hearts.revalidate();
                 seven_of_hearts.repaint();
-                System.out.println(seven_of_hearts_image);*/
+                System.out.println(seven_of_hearts_image);*//*
+
 
 
             }
-            /*seven of Spades*/
+            */
+/*seven of Spades*//*
+
             else if(name_of_images_in_dir.toString().equals("7_of_spades.png")){
                 seven_of_spades_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-         /*       seven_of_spades.setImage(seven_of_spades_image);
+         */
+/*       seven_of_spades.setImage(seven_of_spades_image);
                 seven_of_spades.revalidate();
                 seven_of_spades.repaint();
-                System.out.println(seven_of_spades_image);*/
+                System.out.println(seven_of_spades_image);*//*
+
 
 
             }
-            /*eight of clubs*/
+            */
+/*eight of clubs*//*
+
             else if(name_of_images_in_dir.toString().equals("8_of_clubs.png")){
                 eight_of_clubs_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-              /*  eight_of_clubs.setImage(eight_of_clubs_image);
+              */
+/*  eight_of_clubs.setImage(eight_of_clubs_image);
                 eight_of_clubs.revalidate();
                 eight_of_clubs.repaint();
-                System.out.println(eight_of_clubs_image);*/
+                System.out.println(eight_of_clubs_image);*//*
+
 
 
             }
-            /*eight of diamonds*/
+            */
+/*eight of diamonds*//*
+
             else if(name_of_images_in_dir.toString().equals("8_of_diamonds.png")){
                 eight_of_diamonds_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-           /*     eight_of_diamonds.setImage(eight_of_diamonds_image);
+           */
+/*     eight_of_diamonds.setImage(eight_of_diamonds_image);
                 eight_of_diamonds.revalidate();
                 eight_of_diamonds.repaint();
-                System.out.println(eight_of_diamonds_image);*/
+                System.out.println(eight_of_diamonds_image);*//*
+
 
 
             }
-            /*eight of hearts*/
+            */
+/*eight of hearts*//*
+
             else if(name_of_images_in_dir.toString().equals("8_of_hearts.png")){
                 eight_of_hearts_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-          /*      eight_of_hearts.setImage(eight_of_hearts_image);
+          */
+/*      eight_of_hearts.setImage(eight_of_hearts_image);
                 eight_of_hearts.revalidate();
                 eight_of_hearts.repaint();
-                System.out.println(eight_of_hearts_image);*/
+                System.out.println(eight_of_hearts_image);*//*
+
 
 
             }
-            /*eight of Spades*/
+            */
+/*eight of Spades*//*
+
             else if(name_of_images_in_dir.toString().equals("8_of_spades.png")){
                 eight_of_spades_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-            /*    eight_of_spades.setImage(eight_of_spades_image);
+            */
+/*    eight_of_spades.setImage(eight_of_spades_image);
                 eight_of_spades.revalidate();
                 eight_of_spades.repaint();
-                System.out.println(eight_of_spades_image);*/
+                System.out.println(eight_of_spades_image);*//*
+
 
 
             }
-            /*nine of clubs*/
+            */
+/*nine of clubs*//*
+
             else if(name_of_images_in_dir.toString().equals("9_of_clubs.png")){
                 nine_of_clubs_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-           /*     nine_of_clubs.setImage(nine_of_clubs_image);
+           */
+/*     nine_of_clubs.setImage(nine_of_clubs_image);
                 nine_of_clubs.revalidate();
                 nine_of_clubs.repaint();
                 System.out.println(nine_of_clubs_image);
-*/
+*//*
+
 
             }
-            /*nine of diamonds*/
+            */
+/*nine of diamonds*//*
+
             else if(name_of_images_in_dir.toString().equals("9_of_diamonds.png")){
                 nine_of_diamonds_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-           /*     nine_of_diamonds.setImage(nine_of_diamonds_image);
+           */
+/*     nine_of_diamonds.setImage(nine_of_diamonds_image);
                 nine_of_diamonds.revalidate();
                 nine_of_diamonds.repaint();
-                System.out.println(nine_of_diamonds_image);*/
+                System.out.println(nine_of_diamonds_image);*//*
+
 
 
             }
-            /*nine of hearts*/
+            */
+/*nine of hearts*//*
+
             else if(name_of_images_in_dir.toString().equals("9_of_hearts.png")){
                 nine_of_hearts_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-            /*    nine_of_hearts.setImage(nine_of_hearts_image);
+            */
+/*    nine_of_hearts.setImage(nine_of_hearts_image);
                 nine_of_hearts.revalidate();
                 nine_of_hearts.repaint();
-                System.out.println(nine_of_hearts_image);*/
+                System.out.println(nine_of_hearts_image);*//*
+
 
 
             }
-            /*nine of Spades*/
+            */
+/*nine of Spades*//*
+
             else if(name_of_images_in_dir.toString().equals("9_of_spades.png")){
                 nine_of_spades_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-            /*    nine_of_spades.setImage(nine_of_spades_image);
+            */
+/*    nine_of_spades.setImage(nine_of_spades_image);
                 nine_of_spades.revalidate();
                 nine_of_spades.repaint();
-                System.out.println(nine_of_spades_image);*/
+                System.out.println(nine_of_spades_image);*//*
+
 
 
             }
-            /*ten of clubs*/
+            */
+/*ten of clubs*//*
+
             else if(name_of_images_in_dir.toString().equals("10_of_clubs.png")){
                 ten_of_clubs_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-              /*  ten_of_clubs.setImage(ten_of_clubs_image);
+              */
+/*  ten_of_clubs.setImage(ten_of_clubs_image);
                 ten_of_clubs.revalidate();
                 ten_of_clubs.repaint();
-                System.out.println(ten_of_clubs_image);*/
+                System.out.println(ten_of_clubs_image);*//*
+
 
 
             }
-            /*ten of diamonds*/
+            */
+/*ten of diamonds*//*
+
             else if(name_of_images_in_dir.toString().equals("10_of_diamonds.png")){
                 ten_of_diamonds_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-             /*   ten_of_diamonds.setImage(ten_of_diamonds_image);
+             */
+/*   ten_of_diamonds.setImage(ten_of_diamonds_image);
                 ten_of_diamonds.revalidate();
                 ten_of_diamonds.repaint();
-                System.out.println(ten_of_diamonds_image);*/
+                System.out.println(ten_of_diamonds_image);*//*
+
 
 
             }
-            /*ten of hearts*/
+            */
+/*ten of hearts*//*
+
             else if(name_of_images_in_dir.toString().equals("10_of_hearts.png")){
                 ten_of_hearts_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-             /*   ten_of_hearts.setImage(ten_of_hearts_image);
+             */
+/*   ten_of_hearts.setImage(ten_of_hearts_image);
                 ten_of_hearts.revalidate();
                 ten_of_hearts.repaint();
-                System.out.println(ten_of_hearts_image);*/
+                System.out.println(ten_of_hearts_image);*//*
+
 
 
             }
-            /*ten of Spades*/
+            */
+/*ten of Spades*//*
+
             else if(name_of_images_in_dir.toString().equals("10_of_spades.png")){
                 ten_of_spades_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-           /*     ten_of_spades.setImage(ten_of_spades_image);
+           */
+/*     ten_of_spades.setImage(ten_of_spades_image);
                 ten_of_spades.revalidate();
                 ten_of_spades.repaint();
-                System.out.println(ten_of_spades_image);*/
+                System.out.println(ten_of_spades_image);*//*
+
 
 
             }
-            /*jack of clubs*/
+            */
+/*jack of clubs*//*
+
             else if(name_of_images_in_dir.toString().equals("jack_of_clubs.png")){
                 jack_of_clubs_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-            /*    jack_of_clubs.setImage(jack_of_clubs_image);
+            */
+/*    jack_of_clubs.setImage(jack_of_clubs_image);
                 jack_of_clubs.revalidate();
                 jack_of_clubs.repaint();
-                System.out.println(jack_of_clubs_image);*/
+                System.out.println(jack_of_clubs_image);*//*
+
 
 
             }
-            /*jack of diamonds*/
+            */
+/*jack of diamonds*//*
+
             else if(name_of_images_in_dir.toString().equals("jack_of_diamonds.png")){
                 jack_of_diamonds_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-            /*    jack_of_diamonds.setImage(jack_of_diamonds_image);
+            */
+/*    jack_of_diamonds.setImage(jack_of_diamonds_image);
                 jack_of_diamonds.revalidate();
                 jack_of_diamonds.repaint();
-                System.out.println(jack_of_diamonds_image);*/
+                System.out.println(jack_of_diamonds_image);*//*
+
 
 
             }
-            /*jack of hearts*/
+            */
+/*jack of hearts*//*
+
             else if(name_of_images_in_dir.toString().equals("jack_of_hearts.png")){
                 jack_of_hearts_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-              /*  jack_of_hearts.setImage(jack_of_hearts_image);
+              */
+/*  jack_of_hearts.setImage(jack_of_hearts_image);
                 jack_of_hearts.revalidate();
                 jack_of_hearts.repaint();
-                System.out.println(jack_of_hearts_image);*/
+                System.out.println(jack_of_hearts_image);*//*
+
 
 
             }
-            /*jack of Spades*/
+            */
+/*jack of Spades*//*
+
             else if(name_of_images_in_dir.toString().equals("jack_of_spades.png")){
                 jack_of_spades_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-         /*       jack_of_spades.setImage(jack_of_spades_image);
+         */
+/*       jack_of_spades.setImage(jack_of_spades_image);
                 jack_of_spades.revalidate();
                 jack_of_spades.repaint();
-                System.out.println(jack_of_spades_image);*/
+                System.out.println(jack_of_spades_image);*//*
+
 
 
             }
-            /*queen of clubs*/
+            */
+/*queen of clubs*//*
+
             else if(name_of_images_in_dir.toString().equals("queen_of_clubs.png")){
                 queen_of_clubs_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-        /*        queen_of_clubs.setImage(queen_of_clubs_image);
+        */
+/*        queen_of_clubs.setImage(queen_of_clubs_image);
                 queen_of_clubs.revalidate();
                 queen_of_clubs.repaint();
-                System.out.println(queen_of_clubs_image);*/
+                System.out.println(queen_of_clubs_image);*//*
+
 
 
             }
-            /*queen of diamonds*/
+            */
+/*queen of diamonds*//*
+
             else if(name_of_images_in_dir.toString().equals("queen_of_diamonds.png")){
                 queen_of_diamonds_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-            /*    queen_of_diamonds.setImage(queen_of_diamonds_image);
+            */
+/*    queen_of_diamonds.setImage(queen_of_diamonds_image);
                 queen_of_diamonds.revalidate();
                 queen_of_diamonds.repaint();
                 System.out.println(queen_of_diamonds_image);
-*/
+*//*
+
 
             }
-            /*queen of hearts*/
+            */
+/*queen of hearts*//*
+
             else if(name_of_images_in_dir.toString().equals("queen_of_hearts.png")){
                 queen_of_hearts_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-         /*       queen_of_hearts.setImage(queen_of_hearts_image);
+         */
+/*       queen_of_hearts.setImage(queen_of_hearts_image);
                 queen_of_hearts.revalidate();
                 queen_of_hearts.repaint();
-                System.out.println(queen_of_hearts_image);*/
+                System.out.println(queen_of_hearts_image);*//*
+
 
 
             }
-            /*queen of Spades*/
+            */
+/*queen of Spades*//*
+
             else if(name_of_images_in_dir.toString().equals("queen_of_spades.png")){
                 queen_of_spades_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-             /*   queen_of_spades.setImage(queen_of_spades_image);
+             */
+/*   queen_of_spades.setImage(queen_of_spades_image);
                 queen_of_spades.revalidate();
                 queen_of_spades.repaint();
-                System.out.println(queen_of_spades_image);*/
+                System.out.println(queen_of_spades_image);*//*
+
 
 
             }
-            /*king of clubs*/
+            */
+/*king of clubs*//*
+
             else if(name_of_images_in_dir.toString().equals("king_of_clubs.png")){
                 king_of_clubs_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-            /*    king_of_clubs.setImage(king_of_clubs_image);
+            */
+/*    king_of_clubs.setImage(king_of_clubs_image);
                 king_of_clubs.revalidate();
                 king_of_clubs.repaint();
-                System.out.println(king_of_clubs_image);*/
+                System.out.println(king_of_clubs_image);*//*
+
 
 
             }
-            /*king of diamonds*/
+            */
+/*king of diamonds*//*
+
             else if(name_of_images_in_dir.toString().equals("king_of_diamonds.png")){
                 king_of_diamonds_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-          /*      king_of_diamonds.setImage(king_of_diamonds_image);
+          */
+/*      king_of_diamonds.setImage(king_of_diamonds_image);
                 king_of_diamonds.revalidate();
                 king_of_diamonds.repaint();
-                System.out.println(king_of_diamonds_image);*/
+                System.out.println(king_of_diamonds_image);*//*
+
 
 
             }
-            /*king of hearts*/
+            */
+/*king of hearts*//*
+
             else if(name_of_images_in_dir.toString().equals("king_of_hearts.png")){
                 king_of_hearts_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-            /*    king_of_hearts.setImage(king_of_hearts_image);
+            */
+/*    king_of_hearts.setImage(king_of_hearts_image);
                 king_of_hearts.revalidate();
                 king_of_hearts.repaint();
-                System.out.println(king_of_hearts_image);*/
+                System.out.println(king_of_hearts_image);*//*
+
 
 
             }
-            /*king of Spades*/
+            */
+/*king of Spades*//*
+
             else if(name_of_images_in_dir.toString().equals("king_of_spades.png")){
                 king_of_spades_image = ImageIO.read(new File(dirPath+"\\"+name_of_images_in_dir));
-             /*   king_of_spades.setImage(king_of_spades_image);
+             */
+/*   king_of_spades.setImage(king_of_spades_image);
                 king_of_spades.revalidate();
                 king_of_spades.repaint();
-                System.out.println(king_of_spades_image);*/
+                System.out.println(king_of_spades_image);*//*
+
 
 
             }
@@ -1168,210 +1381,211 @@ public class CardChooserControl extends JPanel {
 
                                 for (int n = 0; n < CardImage.size(); n++) {
                                     if (suitFacepanel.getValue().equals(ace_clubs)) {
-                                        imagePanel.setImage(ace_of_clubs_image);
+                                        ace_clubs.setImage(ace_of_clubs_image);
 
 
                                     } else if (suitFacepanel.getValue().equals(ace_diamonds)) {
-                                        imagePanel.setImage(ace_of_diamonds_image);
+                                        ace_diamonds.setImage(ace_of_diamonds_image);
 
 
                                     } else if (suitFacepanel.getValue().equals(ace_hearts)) {
-                                        imagePanel.setImage(ace_of_hearts_image);
+                                        ace_hearts.setImage(ace_of_hearts_image);
 
 
 
 
                                     } else if (suitFacepanel.getValue().equals(ace_spades)) {
-                                        imagePanel.setImage(ace_of_spades_image);
+                                        ace_spades.setImage(ace_of_spades_image);
 
 
 
 
                                     } else if (suitFacepanel.getValue().equals(king_of_clubs)) {
-                                        imagePanel.setImage(king_of_clubs_image);
+                                        king_of_clubs.setImage(king_of_clubs_image);
 
 
 
                                     } else if (suitFacepanel.getValue().equals(king_of_diamonds)) {
-                                        imagePanel.setImage(king_of_diamonds_image);
+                                        king_of_diamonds.setImage(king_of_diamonds_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(king_of_hearts)) {
-                                        imagePanel.setImage(king_of_hearts_image);
+                                        king_of_hearts.setImage(king_of_hearts_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(king_of_spades)) {
-                                        imagePanel.setImage(king_of_spades_image);
+                                        king_of_spades.setImage(king_of_spades_image);
                                         
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(queen_of_clubs)) {
-                                        imagePanel.setImage(queen_of_clubs_image);
+                                        queen_of_clubs.setImage(queen_of_clubs_image);
                                         
 
                                     } else if (suitFacepanel.getValue().equals(queen_of_diamonds)) {
-                                        imagePanel.setImage(queen_of_diamonds_image);
+                                        queen_of_diamonds.setImage(queen_of_diamonds_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(queen_of_hearts)) {
-                                        imagePanel.setImage(queen_of_hearts_image);
+                                        queen_of_hearts.setImage(queen_of_hearts_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(queen_of_spades)) {
-                                        imagePanel.setImage(queen_of_spades_image);
+                                        queen_of_spades.setImage(queen_of_spades_image);
                                         
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(jack_of_clubs)) {
-                                        imagePanel.setImage(jack_of_clubs_image);
+                                        jack_of_clubs.setImage(jack_of_clubs_image);
                                         
 
 
                                     } else if (suitFacepanel.getValue().equals(jack_of_diamonds)) {
-                                        imagePanel.setImage(jack_of_diamonds_image);
+                                        jack_of_diamonds.setImage(jack_of_diamonds_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(jack_of_hearts)) {
-                                        imagePanel.setImage(jack_of_hearts_image);
+                                        jack_of_hearts.setImage(jack_of_hearts_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(jack_of_spades)) {
-                                        imagePanel.setImage(jack_of_spades_image);
+                                        jack_of_spades.setImage(jack_of_spades_image);
                                         
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(ten_of_clubs)) {
-                                        imagePanel.setImage(ten_of_clubs_image);
+                                        ten_of_clubs.setImage(ten_of_clubs_image);
                                         
 
 
                                     } else if (suitFacepanel.getValue().equals(ten_of_diamonds)) {
-                                        imagePanel.setImage(ten_of_diamonds_image);
+                                        ten_of_diamonds.setImage(ten_of_diamonds_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(ten_of_hearts)) {
-                                        imagePanel.setImage(ten_of_hearts_image);
+                                        ten_of_hearts.setImage(ten_of_hearts_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(ten_of_spades)) {
-                                        imagePanel.setImage(ten_of_spades_image);
+                                        ten_of_spades.setImage(ten_of_spades_image);
+                                        //imagePanel.setImage(ten_of_spades_image);
                                         
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(nine_of_clubs)) {
-                                        imagePanel.setImage(nine_of_clubs_image);
+                                        nine_of_clubs.setImage(nine_of_clubs_image);
                                         
 
 
                                     } else if (suitFacepanel.getValue().equals(nine_of_diamonds)) {
-                                        imagePanel.setImage(nine_of_diamonds_image);
+                                        nine_of_diamonds.setImage(nine_of_diamonds_image);
                                         
 
 
                                     } else if (suitFacepanel.getValue().equals(nine_of_hearts)) {
-                                        imagePanel.setImage(nine_of_hearts_image);
+                                        nine_of_hearts.setImage(nine_of_hearts_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(nine_of_spades)) {
-                                        imagePanel.setImage(nine_of_spades_image);
+                                        nine_of_spades.setImage(nine_of_spades_image);
                                         
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(eight_of_clubs)) {
-                                        imagePanel.setImage(eight_of_clubs_image);
+                                        eight_of_clubs.setImage(eight_of_clubs_image);
                                         
 
 
                                     } else if (suitFacepanel.getValue().equals(eight_of_diamonds)) {
-                                        imagePanel.setImage(eight_of_diamonds_image);
+                                        eight_of_diamonds.setImage(eight_of_diamonds_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(eight_of_hearts)) {
-                                        imagePanel.setImage(eight_of_hearts_image);
+                                        eight_of_hearts.setImage(eight_of_hearts_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(eight_of_spades)) {
-                                        imagePanel.setImage(eight_of_spades_image);
+                                        eight_of_spades.setImage(eight_of_spades_image);
                                         
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(seven_of_clubs)) {
-                                        imagePanel.setImage(seven_of_clubs_image);
+                                        seven_of_clubs.setImage(seven_of_clubs_image);
                                         
 
 
                                     } else if (suitFacepanel.getValue().equals(seven_of_diamonds)) {
-                                        imagePanel.setImage(seven_of_diamonds_image);
+                                        seven_of_diamonds.setImage(seven_of_diamonds_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(seven_of_hearts)) {
-                                        imagePanel.setImage(seven_of_hearts_image);
+                                        seven_of_hearts.setImage(seven_of_hearts_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(seven_of_spades)) {
-                                        imagePanel.setImage(seven_of_spades_image);
+                                        seven_of_spades.setImage(seven_of_spades_image);
                                         
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(six_of_clubs)) {
-                                        imagePanel.setImage(six_of_clubs_image);
+                                        six_of_clubs.setImage(six_of_clubs_image);
                                         
 
 
                                     } else if (suitFacepanel.getValue().equals(six_of_diamonds)) {
-                                        imagePanel.setImage(six_of_diamonds_image);
+                                        six_of_diamonds.setImage(six_of_diamonds_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(six_of_hearts)) {
-                                        imagePanel.setImage(six_of_hearts_image);
+                                        six_of_hearts.setImage(six_of_hearts_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(six_of_spades)) {
-                                        imagePanel.setImage(six_of_spades_image);
+                                        six_of_spades.setImage(six_of_spades_image);
                                         
 
 
@@ -1379,96 +1593,97 @@ public class CardChooserControl extends JPanel {
                                     }
                                     else if (suitFacepanel.getValue().equals(five_of_clubs)) {
 
-                                        imagePanel.setImage(five_of_clubs_image);
+                                        five_of_clubs.setImage(five_of_clubs_image);
                                         
 
 
                                     } else if (suitFacepanel.getValue().equals(five_of_diamonds)) {
-                                        imagePanel.setImage(five_of_diamonds_image);
+                                        five_of_diamonds.setImage(five_of_diamonds_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(five_of_hearts)) {
-                                        imagePanel.setImage(five_of_hearts_image);
+                                        five_of_hearts.setImage(five_of_hearts_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(five_of_spades)) {
-                                        imagePanel.setImage(five_of_spades_image);
+                                        five_of_spades.setImage(five_of_spades_image);
                                         
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(four_of_clubs)) {
-                                        imagePanel.setImage(four_of_clubs_image);
+                                        four_of_clubs.setImage(four_of_clubs_image);
                                         
 
 
                                     } else if (suitFacepanel.getValue().equals(four_of_diamonds)) {
-                                        imagePanel.setImage(four_of_diamonds_image);
+                                        four_of_diamonds.setImage(four_of_diamonds_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(four_of_hearts)) {
-                                        imagePanel.setImage(four_of_hearts_image);
+                                        four_of_hearts.setImage(four_of_hearts_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(four_of_spades)) {
-                                        imagePanel.setImage(four_of_spades_image);
+                                        four_of_spades.setImage(four_of_spades_image);
                                         
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(three_of_clubs)) {
-                                        imagePanel.setImage(three_of_clubs_image);
+                                        three_of_clubs.setImage(three_of_clubs_image);
                                         
 
 
                                     } else if (suitFacepanel.getValue().equals(three_of_diamonds)) {
-                                        imagePanel.setImage(three_of_diamonds_image);
+                                        three_of_diamonds.setImage(three_of_diamonds_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(three_of_hearts)) {
-                                        imagePanel.setImage(three_of_hearts_image);
+                                        three_of_hearts.setImage(three_of_hearts_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(three_of_spades)) {
-                                        imagePanel.setImage(three_of_spades_image);
+                                        three_of_spades.setImage(three_of_spades_image);
                                         
 
 
 
                                     }
                                     else if (suitFacepanel.getValue().equals(two_of_clubs)) {
-                                        imagePanel.setImage(two_of_clubs_image);
+                                        two_of_clubs.setImage(two_of_clubs_image);
                                         
 
 
                                     } else if (suitFacepanel.getValue().equals(two_of_diamonds)) {
-                                        imagePanel.setImage(two_of_diamonds_image);
+                                        two_of_diamonds.setImage(two_of_diamonds_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(two_of_hearts)) {
-                                        imagePanel.setImage(two_of_hearts_image);
+                                        two_of_hearts.setImage(two_of_hearts_image);
                                         
 
 
 
                                     } else if (suitFacepanel.getValue().equals(two_of_spades)) {
-                                        imagePanel.setImage(two_of_spades_image);
+
+                                        two_of_spades.setImage(two_of_spades_image);
                                         
 
 
@@ -1503,3 +1718,4 @@ public class CardChooserControl extends JPanel {
 
 
 }
+*/

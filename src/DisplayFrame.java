@@ -11,11 +11,14 @@ public class DisplayFrame extends JFrame{
 
     public DisplayFrame() throws IOException {
         super("Cards");
+        this.setBackground(Color.green);
 
 
 
         deckOfCards = new DisplayPanel();
-
+        Insets insets = deckOfCards.getInsets();
+        deckOfCards.setSize(250 + insets.left + insets.right,
+                90 + insets.top + insets.bottom);
 
         add(deckOfCards);
 
